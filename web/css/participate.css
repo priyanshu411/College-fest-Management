@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+main{
+    width: 100vw;
+    height: 80vh;
+    background-color:gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(54% 0, 100% 0, 100% 35%, 100% 100%, 83% 90%, 53% 100%, 21% 90%, 0 95%, 0 37%, 0 0); 
+}
+/* entry */
+.entry{
+    height: auto;
+    width: 400px;
+    background-color:white;
+    color:black;
+}
+.heading{
+    color: #3410c4;
+    background-color: darkseagreen;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+    font-size: 2rem;
+}
+#message{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: green;
+    margin: 10px;
+    padding: 5px;
+}
+.select_eve label{
+    font-size: 1.5rem;
+    margin: 15px;
+    padding: 5px;
+}
+.select_eve #event {
+    font-size: 1.2rem;
+    height: 40px;
+    width: 150px;
+    margin: 15px;
+    padding: 5px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color:#0abde3;
+    cursor: pointer;
+}
+/* program */
+#program {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 15px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+#program input{
+    margin: 10px;
+}
+#sub_btn{
+    width: 100px;
+    height: 40px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid black;
+    background-color: #00d8d6;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#sub_btn:hover{
+    box-shadow: inset 2px 2px 5px 1px rgba(0, 0, 0, 0.486), inset -2px -2px 5px 1px rgba(0, 0, 0, 0.486);
+}

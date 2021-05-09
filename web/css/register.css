@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px; 
+    box-sizing: border-box; 
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #808e9b;
+}
+.heading{
+    height: 60px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(128, 0, 60);
+    background-color: greenyellow;
+    padding: 15px;
+}
+
+#register_form{
+    width: 420px;
+    height: 575px;
+    background-color: white;
+    box-shadow: 11px 10px 8px 2px rgba(0, 0, 0, 0.486);
+}
+
+.msg{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: green;
+    margin: 10px;
+    padding: 5px;
+}
+.reg_input input {
+    width: 365px;
+    height: 40px;
+    margin: 15px 25px;
+    padding: 10px;
+    text-transform:uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 1.7px solid #2f3542;
+    border-radius: 5px;
+}
+.reg_oth input{
+    width: 167px;
+    height: 40px;
+    margin: 15px 0px 0px 25px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1.7px solid #2f3542;
+    border-radius: 5px;
+}
+.sub_btn {
+    width: 100px;
+    height: 40px;
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #00d8d6;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.sub_btn:hover{
+    border: 1.6px solid black;
+    transition: 0.1s all ease;
+    background-color: #adff2f;
+    background-origin: border-box;
+}
+.login{
+    margin-left: 10px;
+    font-size: 1.2rem;
+    color: blue;
+    text-decoration: none;
+}
