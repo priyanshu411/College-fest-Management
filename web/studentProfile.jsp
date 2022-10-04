@@ -2,9 +2,12 @@
     String name = (String) session.getAttribute("user");
     String userType = (String) session.getAttribute("type");
     String erNo = (String) session.getAttribute("userName");
-    if (name == null && userType == null && erNo == null) {
+    if (name == null && userType == null && erNo == null)
+    {
         response.sendRedirect("login.jsp");
-    } else if (userType.equals("student") != true) {
+    }
+    else if (userType.equals("student") != true)
+    {
         response.sendRedirect("login.jsp");
     }
 %>
@@ -33,7 +36,8 @@
                     ResultSet data = db.getData(conn, query);
                 %>
                 <%
-                    while (data.next()) {
+                    while (data.next())
+                    {
                 %>
                 <option value="<%=data.getString("eventName")%>"><%=data.getString("eventName")%></option>
                 <%
@@ -48,9 +52,8 @@
         <div id="table">
 
         </div>
-
         <!--javascript-->
-        
+
         <script src="js/studentProfile.js" type="text/javascript"></script>
     </body>
 </html>

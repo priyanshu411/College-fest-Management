@@ -6,11 +6,13 @@ public class DbConnect {
 
     //open the connection
     public Connection openConnection() {
-        String connectionUrl = "jdbc:sqlserver://LAPTOP-HCD08HR8;databaseName=College_fest;IntegratedSecurity=true";
+//        String connectionUrl = "jdbc:sqlserver://LAPTOP-HCD08HR8;databaseName=College_fest;IntegratedSecurity=true";
+        String connectionUrl = "jdbc:mysql://localhost:3306/College_fest";
+        
         Connection con = null;
 
         try {
-            con = DriverManager.getConnection(connectionUrl);
+            con = DriverManager.getConnection(connectionUrl,"root","");
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
